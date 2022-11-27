@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="./src/index.js" type="module"></script>
+  <title>Adivina el número</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Adivina el número</h1>
+
+    <p>
+      Adivina el número secreto entre 1 y 100. Cada vez que seleccione un número que no sea correcto se deshabilitan los botones con resultados que no son posibles, por ejemplo: Si el número secreto es `54` y usted hace clic en el número `30` se desactivan los botones del `1` al `30` (inclusive) porque el número secreto es mayor que `30`.
+    </p>
+  </div>
+
+  <div class="container grid" id="buttons-container"></div>
+
+  <div class="container">
+    <button id="new">Nueva partida</button>
+  </div>
+</body>
+</html>

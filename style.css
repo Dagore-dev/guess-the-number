@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  background-image: linear-gradient( 95.2deg, rgba(173,252,234,1) 26.8%, rgba(192,229,246,1) 64% );
+  background-repeat: no-repeat;
+}
+
+button {
+  appearance: none;
+  border: none;
+  background-color: aquamarine;
+  box-shadow: 2px 2px 2px aqua;
+}
+
+button:disabled {
+  background-color: bisque;
+  box-shadow: 2px 2px 2px beige;
+}
+
+.container {
+  max-width: 80vw;
+  margin: auto;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(35px, 1fr));
+  gap: .5rem;
+}
+
+@media screen and (min-width: 480px) {
+  button:hover {
+    scale: 1.1;
+  }
+
+  .container {
+    max-width: 60vw;
+  }
+
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(75px, 1fr));
+  }  
+}
