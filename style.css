@@ -44,6 +44,16 @@ button:disabled {
   gap: .5rem;
 }
 
+.modal {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  margin: 0 auto;
+  text-align: center;
+  z-index: 10;
+}
+
 @media screen and (min-width: 480px) {
   button:hover {
     scale: 1.1;
